@@ -1,5 +1,9 @@
 timeseries_project/
 │
+├── environment/                          # 🌱 New environment folder
+│   ├── __init__.py
+│   └── environment.py
+│
 ├── requirements/
 │   ├── __init__.py
 │   └── requirement.py
