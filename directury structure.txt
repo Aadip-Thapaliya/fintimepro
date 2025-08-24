@@ -1,0 +1,84 @@
+timeseries_project/
+│
+├── requirements/
+│   ├── __init__.py
+│   └── requirement.py
+│
+├── data_fetching/
+│   ├── __init__.py
+│   └── yahoofinance.py
+│
+├── data_processing/
+│   ├── __init__.py
+│   └── data.py
+│
+├── exploratory_analysis/                 # 🔎 Modular EDA
+│   ├── __init__.py
+│   ├── eda_runner.py                     # orchestrates all EDA methods
+│   │
+│   ├── plots/
+│   │   ├── __init__.py
+│   │   ├── timeseries_plot.py            # line plots
+│   │   ├── histogram.py                  # distributions
+│   │   ├── correlation_heatmap.py        # correlations
+│   │   └── rolling_stats.py              # rolling mean/variance
+│   │
+│   ├── stats/
+│       ├── __init__.py
+│       ├── summary_stats.py              # mean, std, skewness, etc.
+│       └── stationarity_test.py          # ADF test, KPSS test
+│
+├── modeling/                             # 🤖 Models organized by category
+│   ├── __init__.py
+│
+│   ├── classical/
+│   │   ├── __init__.py
+│   │   ├── arima.py
+│   │   ├── sarima.py
+│   │   └── var.py
+│
+│   ├── volatility/
+│   │   ├── __init__.py
+│   │   └── garch.py
+│
+│   ├── econometric/
+│   │   ├── __init__.py
+│   │   ├── capm.py
+│   │   └── fama_french.py
+│
+│   ├── machine_learning/
+│   │   ├── __init__.py
+│   │   ├── random_forest.py
+│   │   └── gradient_boosting.py
+│
+│   ├── deep_learning/
+│       ├── __init__.py
+│       ├── lstm.py
+│       └── gru.py
+│
+├── evaluation/                           # 📊 Model evaluation metrics
+│   ├── __init__.py
+│   ├── evaluator.py                      # orchestrates all metrics
+│   │
+│   ├── regression/
+│   │   ├── __init__.py
+│   │   ├── rmse.py
+│   │   ├── mae.py
+│   │   └── r2_score.py
+│   │
+│   ├── time_series/
+│   │   ├── __init__.py
+│   │   ├── mape.py
+│   │   ├── mase.py
+│   │   └── smape.py
+│   │
+│   ├── finance/
+│       ├── __init__.py
+│       ├── sharpe_ratio.py
+│       ├── sortino_ratio.py
+│       └── alpha_beta.py                 # Jensen’s alpha, beta
+│
+├── outputs/
+│
+├── main.py
+└── README.md
